@@ -384,4 +384,91 @@ style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;paddi
 </footer>
 
 </body>
-</html>
+</html>.gallery{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    opacity:0;
+    transform:translateX(-120px) rotateY(25deg);
+    transition:1s ease;
+    perspective:1000px;
+}
+
+.card.right{
+    transform:translateX(120px) rotateY(-25deg);
+}
+
+.card.show{
+    opacity:1;
+    transform:translateX(0) rotateY(0);
+}
+
+.card img{
+    width:100%;
+    border-radius:25px;
+    display:block;
+    box-shadow:0 15px 35px rgba(255,215,0,.4);
+    border:3px solid gold;
+    transition:.5s;
+}
+
+.card img:hover{
+    transform:scale(1.05) rotateY(8deg);
+    box-shadow:0 20px 45px gold;
+}<div class="gallery">
+
+<div class="card left">
+<img src="images/mehndi1.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card right">
+<img src="images/mehndi2.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card left">
+<img src="images/mehndi3.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card right">
+<img src="images/mehndi4.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card left">
+<img src="images/mehndi5.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card right">
+<img src="images/mehndi6.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card left">
+<img src="images/mehndi7.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card right">
+<img src="images/mehndi8.jpg" alt="Mehndi Design">
+</div>
+
+<div class="card left">
+<img src="images/mehndi9.jpg" alt="Mehndi Design">
+</div>
+
+</div><script>
+const cards=document.querySelectorAll('.card');
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{threshold:0.2});
+
+cards.forEach(card=>{
+observer.observe(card);
+});
+</script>
