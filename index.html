@@ -1,245 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sanjay Mehandi Artist</title>
+
+<title>Sanjay Mehandi Artist | Sonipat</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<section class="hero">
+<header class="hero">
 
 <div class="overlay"></div>
 
-<div class="content">
+<div class="hero-content">
 
-<h3 class="welcome">
-Welcome To
-</h3>
+<p class="welcome">
+✨ Welcome To ✨
+</p>
 
-<h1 class="title">
-Sanjay Mehandi Artist
+<h1 class="brand">
+Sanjay
+<span>Mehandi Artist</span>
 </h1>
 
-<h2 class="city">
-Sonipat, Haryana
+<h2 class="location">
+📍 Sonipat • Haryana
 </h2>
+
+<p class="tagline">
+Bridal • Arabic • Royal • Engagement Mehndi
+</p>
+
+<div class="buttons">
 
 <a href="tel:8630549049" class="call-btn">
 📞 Call Now
+</a>
+
+<a href="https://wa.me/918630549049" class="whatsapp-btn">
+💬 WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<div class="scroll-down">
+⌄
+</div>
+
+</header>
+
+<script src="script.js"></script>
+
+</body>
+</html>*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+overflow-x:hidden;
+}
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:url("background.jpg") center center/cover no-repeat;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.60);
+backdrop-filter:blur(2px);
+}
+
+.hero-content{
+position:relative;
+z-index:10;
+padding:30px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,215,0,.4);
+border-radius:25px;
+backdrop-filter:blur(12px);
+box-shadow:0 0 35px rgba(255,215,0,.35);
+}
+
+.welcome{
+font-size:28px;
+color:#FFD700;
+letter-spacing:3px;
+animation:topIn 1.5s ease;
+}
+
+.brand{
+font-size:60px;
+color:#fff;
+margin:15px 0;
+text-shadow:0 0 10px gold,
+0 0 20px gold,
+0 0 40px #ffb700;
+animation:rightIn 2s ease;
+}
+
+.brand span{
+display:block;
+color:#FFD700;
+}
+
+.location{
+font-size:30px;
+color:#fff;
+animation:leftIn 2s ease;
+}
+
+.tagline{
+margin-top:15px;
+font-size:20px;
+color:#eee;
+animation:fadeUp 2.5s ease;
+}
+
+.buttons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.call-btn,
+.whatsapp-btn{
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+transition:.4s;
+}
+
+.call-btn{
+background:#ff0000;
+color:#fff;
+animation:pulse 1.2s infinite;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:#fff;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+transform:scale(1.1);
+}
+
+.scroll-down{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+font-size:40px;
+color:#FFD700;
+animation:bounce 1.5s infinite;
+z-index:10;
+}
+
+@keyframes topIn{
+from{opacity:0;transform:translateY(-100px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes rightIn{
+from{opacity:0;transform:translateX(350px);}
+to{opacity:1;transform:translateX(0);}
+}
+
+@keyframes leftIn{
+from{opacity:0;transform:translateX(-350px);}
+to{opacity:1;transform:translateX(0);}
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(80px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.12);}
+100%{transform:scale(1);}
+}
+
+@keyframes bounce{
+0%,100%{transform:translate(-50%,0);}
+50%{transform:translate(-50%,-10px);}
+}
+
+@media(max-width:768px){
+
+.brand{
+font-size:42px;
+}
+
+.location{
+font-size:22px;
+}
+
+.tagline{
+font-size:16px;
+}
+
+.call-btn,
+.whatsapp-btn{
+width:100%;
+}
+🌿 Full Screen Mehndi Photo
+
+        ✨ Welcome To ✨
+
+     SANJAY
+   MEHANDI ARTIST
+
+📍 Sonipat, Haryana
+
+[ 📞 Call Now ]   [ 💬 WhatsApp ]
+
+⬇ Scroll Down
+}<section class="gallery">
+
+<h2 class="gallery-title">Our Premium Mehndi Gallery</h2>
+
+<div class="slider">
+
+<div class="slide-track">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+
+</div>
+
+</div>
+
+</section>.gallery{
+background:#080808;
+padding:80px 0;
+overflow:hidden;
+}
+
+.gallery-title{
+text-align:center;
+font-size:40px;
+color:#FFD700;
+margin-bottom:35px;
+font-family:'Cinzel',serif;
+text-shadow:0 0 15px gold;
+}
+
+.slider{
+width:100%;
+overflow:hidden;
+}
+
+.slide-track{
+display:flex;
+width:calc(320px * 8);
+animation:scroll 25s linear infinite;
+}
+
+.slide-track img{
+width:300px;
+height:420px;
+margin:10px;
+border-radius:20px;
+object-fit:cover;
+border:4px solid gold;
+box-shadow:0 0 20px rgba(255,215,0,.5);
+transition:.5s;
+}
+
+.slide-track img:hover{
+transform:scale(1.08);
+}
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(calc(-320px * 4));
+}
+
+}<section class="services">
+
+<h2>✨ Our Mehndi Services ✨</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>👰 Bridal Mehndi</h3>
+<p>Royal & Premium Bridal Designs</p>
+</div>
+
+<div class="service-card">
+<h3>🌿 Arabic Mehndi</h3>
+<p>Latest Arabic Pattern Collection</p>
+</div>
+
+<div class="service-card">
+<h3>💍 Engagement Mehndi</h3>
+<p>Special Couple & Ring Ceremony Designs</p>
+</div>
+
+<div class="service-card">
+<h3>🎉 Party Mehndi</h3>
+<p>Festival & Party Special Mehndi</p>
+</div>
+
+<div class="service-card">
+<h3>🏡 Home Service</h3>
+<p>Available in Sonipat & Nearby Areas</p>
+</div>
+
+<div class="service-card">
+<h3>⭐ 10+ Years Experience</h3>
+<p>Trusted by Hundreds of Happy Clients</p>
+</div>
+
+</div>
+
+<div class="booking-box">
+
+<h2>📞 Book Your Mehndi Today</h2>
+
+<p>Call Now & Book Your Bridal Mehndi</p>
+
+<a href="tel:8630549049" class="book-btn">
+📞 Book Now
+</a>
+
+</div>
+
+</section>.services{
+padding:80px 20px;
+background:#111;
+}
+
+.services h2{
+text-align:center;
+font-size:42px;
+color:#FFD700;
+margin-bottom:40px;
+font-family:'Cinzel',serif;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.service-card{
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,215,0,.5);
+border-radius:20px;
+padding:30px;
+text-align:center;
+color:#fff;
+backdrop-filter:blur(10px);
+transition:.5s;
+}
+
+.service-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px gold;
+}
+
+.service-card h3{
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.booking-box{
+margin-top:60px;
+text-align:center;
+padding:40px;
+background:rgba(255,215,0,.08);
+border:2px solid gold;
+border-radius:20px;
+}
+
+.book-btn{
+display:inline-block;
+margin-top:20px;
+padding:16px 40px;
+background:#ff0000;
+color:#fff;
+text-decoration:none;
+border-radius:50px;
+font-size:22px;
+font-weight:bold;
+animation:pulse 1.2s infinite;
+}<section class="reviews">
+
+<h2>⭐ What Our Customers Say</h2>
+
+<div class="review-container">
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<p>"Amazing Bridal Mehndi Design. Thank you Sanjay Mehandi Artist!"</p>
+<h4>- Priya</h4>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<p>"Very Professional Service & Beautiful Arabic Mehndi."</p>
+<h4>- Neha</h4>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<p>"Best Mehndi Artist in Sonipat. Highly Recommended."</p>
+<h4>- Pooja</h4>
+</div>
+
+</div>
+
+<div class="counter">
+
+<div>
+<h3>1000+</h3>
+<p>Happy Clients</p>
+</div>
+
+<div>
+<h3>10+</h3>
+<p>Years Experience</p>
+</div>
+
+<div>
+<h3>500+</h3>
+<p>Bridal Mehndi</p>
+</div>
+
+</div>
+
+</section>
+
+<a href="https://wa.me/918630549049" class="whatsapp-float">💬</a>
+
+<a href="tel:8630549049" class="call-float">📞</a><section class="contact">
+
+<h2>📍 Contact Us</h2>
+
+<div class="contact-box">
+
+<p>👤 <strong>Sanjay Mehandi Artist</strong></p>
+
+<p>📞 <a href="tel:8630549049">+91 8630549049</a></p>
+
+<p>📍 Shop No. 126, Sector 14, Sonipat, Haryana - 131001</p>
+
+<p>🕒 Open: 9:00 AM - 9:00 PM</p>
+
+<a href="https://wa.me/918630549049" class="contact-btn">
+💬 Chat on WhatsApp
 </a>
 
 </div>
 
 </section>
 
-<script src="script.js"></script>
+<footer>
 
-</body>
-</html>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
+<h3>Sanjay Mehandi Artist</h3>
 
-body{
-    background:url("background.jpg") no-repeat center center/cover;
-    background-attachment:fixed;
-    overflow-x:hidden;
-}
+<p>Bridal • Arabic • Royal • Engagement Mehndi</p>
 
-.hero{
-    height:100vh;
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
+<p>© 2026 All Rights Reserved.</p>
 
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.55);
-}
+</footer><section class="booking">
 
-.content{
-    position:relative;
-    z-index:2;
-    background:rgba(255,255,255,.12);
-    backdrop-filter:blur(12px);
-    padding:35px;
-    border-radius:25px;
-    box-shadow:0 0 30px rgba(255,215,0,.4);
-}
+<h2>Book Your Mehndi</h2>
 
-.welcome{
-    color:#FFD700;
-    font-size:28px;
-    animation:leftIn 2s ease;
-}
+<form>
 
-.title{
-    color:#fff;
-    font-size:52px;
-    margin:15px 0;
-    text-shadow:0 0 15px gold;
-    animation:rightIn 2s ease;
-}
+<input type="text" placeholder="Your Name" required>
 
-.city{
-    color:#ffffff;
-    font-size:28px;
-    animation:bottomIn 2s ease;
-}
+<input type="tel" placeholder="Mobile Number" required>
 
-.call-btn{
-    display:inline-block;
-    margin-top:30px;
-    background:#e60000;
-    color:#fff;
-    text-decoration:none;
-    padding:16px 38px;
-    border-radius:50px;
-    font-size:22px;
-    font-weight:bold;
-    box-shadow:0 0 20px red;
-    animation:pulse 1.2s infinite;
-}
+<input type="date" required>
 
-.call-btn:hover{
-    transform:scale(1.08);
-}
+<textarea placeholder="Write Your Requirement"></textarea>
 
-@keyframes leftIn{
-    from{
-        transform:translateX(-400px);
-        opacity:0;
-    }
-    to{
-        transform:translateX(0);
-        opacity:1;
-    }
-}
+<button type="submit">Book Now</button>
 
-@keyframes rightIn{
-    from{
-        transform:translateX(400px);
-        opacity:0;
-    }
-    to{
-        transform:translateX(0);
-        opacity:1;
-    }
-}
-
-@keyframes bottomIn{
-    from{
-        transform:translateY(250px);
-        opacity:0;
-    }
-    to{
-        transform:translateY(0);
-        opacity:1;
-    }
-}
-
-@keyframes pulse{
-    0%{
-        transform:scale(1);
-        box-shadow:0 0 10px red;
-    }
-    50%{
-        transform:scale(1.15);
-        box-shadow:0 0 35px #ff0000;
-    }
-    100%{
-        transform:scale(1);
-        box-shadow:0 0 10px red;
-    }
-}<section class="gallery">
-
-<h2>Our Mehndi Gallery</h2>
-
-<div class="slider">
-
-<img src="photo1.jpg" alt="Mehndi Design">
-
-<img src="photo2.jpg" alt="Mehndi Design">
-
-<img src="photo3.jpg" alt="Mehndi Design">
-
-<img src="photo4.jpg" alt="Mehndi Design">
-
-<img src="photo5.jpg" alt="Mehndi Design">
-
-<img src="photo6.jpg" alt="Mehndi Design">
-
-</div>
-
-</section><section class="services">
-
-<h2>Our Services</h2>
-
-<div class="service-box">
-
-<div class="card">
-<h3>👰 Bridal Mehndi</h3>
-<p>Beautiful Bridal Mehndi Designs for Weddings.</p>
-</div>
-
-<div class="card">
-<h3>🌿 Arabic Mehndi</h3>
-<p>Latest Arabic Mehndi Designs for Every Occasion.</p>
-</div>
-
-<div class="card">
-<h3>👑 Royal Mehndi</h3>
-<p>Premium Royal Mehndi with Unique Patterns.</p>
-</div>
-
-<div class="card">
-<h3>💍 Engagement Mehndi</h3>
-<p>Special Engagement & Ring Ceremony Mehndi.</p>
-</div>
-
-<div class="card">
-<h3>🎉 Party Mehndi</h3>
-<p>Stylish Mehndi Designs for Festivals & Parties.</p>
-</div>
-
-<div class="card">
-<h3>🌸 Karwa Chauth Mehndi</h3>
-<p>Traditional Mehndi for Karwa Chauth & Teej.</p>
-</div>
-
-</div>
-
-</section><section class="reviews">
-
-<h2>Customer Reviews</h2>
-
-<div class="review-box">
-⭐⭐⭐⭐⭐ <br>
-"Very Beautiful Bridal Mehndi Design. Highly Recommended."
-</div>
-
-<div class="review-box">
-⭐⭐⭐⭐⭐ <br>
-"Professional Mehndi Artist with Amazing Designs."
-</div>
+</form>
 
 </section>
 
-<section class="location">
+<section class="map">
 
-<h2>Our Location</h2>
+<h2>Find Us</h2>
 
 <iframe
 src="https://www.google.com/maps?q=Sector+14+Sonipat+Haryana&output=embed"
@@ -248,75 +541,140 @@ loading="lazy">
 
 </section>
 
-<a href="https://wa.me/918630549049" class="whatsapp" target="_blank">
-💬
-</a>
+<a href="#" class="top-btn">⬆</a><section class="achievements">
 
-<a href="tel:8630549049" class="sticky-call">
-📞
-</a><footer class="footer">
+<h2>🏆 Why Choose Sanjay Mehandi Artist?</h2>
 
-<h2>Sanjay Mehandi Artist</h2>.footer{
-    background:#111;
-    color:#fff;
-    text-align:center;
-    padding:50px 20px;
-    border-top:3px solid gold;
-}
+<div class="achievement-grid">
 
-.footer h2{
-    color:#FFD700;
-    margin-bottom:15px;
-    font-size:36px;
-}
+<div class="achievement-card">
+<h1>10+</h1>
+<p>Years Experience</p>
+</div>
 
-.footer p{
-    margin:10px 0;
-    font-size:18px;
-}
+<div class="achievement-card">
+<h1>1500+</h1>
+<p>Happy Customers</p>
+</div>
 
-.social{
-    margin:25px 0;
-}
+<div class="achievement-card">
+<h1>500+</h1>
+<p>Bridal Mehndi</p>
+</div>
 
-.social a{
-    display:inline-block;
-    margin:10px;
-    padding:12px 25px;
-    border-radius:40px;
-    text-decoration:none;
-    color:#fff;
-    background:#b8860b;
-    transition:.4s;
-}
+<div class="achievement-card">
+<h1>100%</h1>
+<p>Customer Satisfaction</p>
+</div>
 
-.social a:hover{
-    transform:scale(1.1);
-    background:#e60000;
-}
+</div>
 
-.copy{
-    margin-top:25px;
-    color:#ccc;
-    font-size:15px;
-}
+</section><section class="faq">
 
-<p>📍 Shop No. 126, Sector 14, Sonipat, Haryana - 131001</p>
+<h2>❓ Frequently Asked Questions</h2>
 
-<p>📞 +91 8630549049</p>
+<div class="faq-box">
+<h3>💍 Bridal Mehndi Booking?</h3>
+<p>Call or WhatsApp us to book your Mehndi appointment.</p>
+</div>
 
-<p>🌿 Bridal • Arabic • Royal • Engagement Mehndi</p>
+<div class="faq-box">
+<h3>🏠 Home Service Available?</h3>
+<p>Yes, Home Service is available in Sonipat & Nearby Areas.</p>
+</div>
 
-<div class="social">
+<div class="faq-box">
+<h3>⏰ Working Hours</h3>
+<p>Every Day: 9:00 AM - 9:00 PM</p>
+</div>
+
+</section>
+
+<section class="social-links">
+
+<h2>Follow Us</h2>
 
 <a href="tel:8630549049">📞 Call</a>
 
 <a href="https://wa.me/918630549049" target="_blank">💬 WhatsApp</a>
 
+</section><div id="loader">
+
+<div class="loader-logo">
+🌿
 </div>
 
-<p class="copy">
-© 2026 Sanjay Mehandi Artist. All Rights Reserved.
+<h1>Sanjay Mehandi Artist</h1>
+
+<p>Loading Luxury Experience...</p>
+
+</div><script>
+
+window.addEventListener("load",function(){
+
+setTimeout(function(){
+
+document.getElementById("loader").style.opacity="0";
+
+setTimeout(function(){
+
+document.getElementById("loader").style.display="none";
+
+},600);
+
+},2000);
+
+});
+
+</script><section class="offer">
+
+<h2>🎉 Special Bridal Mehndi Booking 🎉</h2>
+
+<p>Book Your Mehndi Today & Get Premium Designs</p>
+
+<div class="offer-buttons">
+
+<a href="tel:8630549049" class="offer-call">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/918630549049" class="offer-whatsapp">
+💬 WhatsApp
+</a>
+
+</div>
+
+</section><section class="about">
+
+<h2>🌿 About Sanjay Mehandi Artist</h2>
+
+<div class="about-box">
+
+<p>
+Welcome to <strong>Sanjay Mehandi Artist</strong>, Sonipat, Haryana.
+We provide beautiful Bridal, Arabic, Royal, Engagement and Festival Mehndi Designs with premium quality and professional service.
 </p>
 
-</footer>
+<div class="about-details">
+
+<div>
+<h3>👰 Bridal Expert</h3>
+</div>
+
+<div>
+<h3>🌿 Arabic Specialist</h3>
+</div>
+
+<div>
+<h3>💍 Wedding Mehndi</h3>
+</div>
+
+<div>
+<h3>🏆 Premium Quality</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
